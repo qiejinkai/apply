@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+.container {
+	margin: 10px;
+	width: 800px;
+}
+
+.key {
+	height: 60px;
+}
+
+.key div {
+	float: left;
+}
+
+.key .key_desc {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.key .words {
+	margin-left: 5px;
+	height: 25px;
+	width: 400px
+}
+
+.key .search {
+	margin-left: 20px;
+	background: url("../img/search.png") no-repeat 2px center;
+	background-color: #56abe4;
+	color: white;
+	width: 60px;
+	height: 30px;
+	border: 0px;
+	text-align: right;
+	border: 0px;
+}
+
+.result {
+	height: 60px;
+	line-height: 60px;
+	background-color: #eeeeee;
+	padding-left: 15px;
+}
+
+.result span {
+	color: #e16531;
+	font-weight: 300;
+}
+
+.job table {
+	width: 100%;
+}
+
+.job table tr td {
+	margin-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: solid #a9b7b7 1px;
+}
+
+.job table tr {
+	
+}
+
+.jobname {
+	color: #17abe3;
+}
+
+.jobtype {
+	color: white;
+	background-color: #f4c600;
+}
+
+.ecomb {
+	
+}
+
+.money {
+	color: #e0620d;
+}
+
+ul {
+	list-style: none;
+}
+
+#pagelist {
+	margin: 30px auto;
+	padding: 6px 0px;
+	height: 20px;
+	float: right;
+}
+
+#pagelist ul li {
+	float: left;
+	border: 0px solid #5d9cdf;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 2px;
+}
+
+#pagelist ul li a {
+	display: block;
+	padding: 0px 6px;
+	background: #e6e6e6;
+	text-decoration: none;
+	color: gray;
+}
+
+.current {
+	background: #a9d2ff;
+	display: block;
+	padding: 0px 6px;
+	font-weight: bold;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>经理人搜索页</title>
+<link rel="stylesheet" type="text/css" href="../css/ui.dialog.css" />
+<link rel="stylesheet" type="text/css" href="../css/userc.search.css" />
+
+</head>
+<body>
+	<h2>经理人搜索页</h2>
+
+	<div class="container">
+		<div class="key">
+			<div class="key_desc">关键词:</div>
+			<div>
+				<input class="words" />
+			</div>
+			<div class="submit">
+				<input type="submit" class="search" value="搜索" />
+			</div>
+
+		</div>
+
+		<div class="result">
+			共为您找到<span>1000+</span>职位
+		</div>
+
+		<div class="job">
+			<table>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td><input type="button" onclick="doApply(1);" value="应聘"></td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td>已应聘</td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td><input type="button" value="应聘"></td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td>已应聘</td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td><input type="button" value="应聘"></td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td>已应聘</td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td><input type="button" value="应聘"></td>
+
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-top: 10px">
+							<span class="jobname">java软件工程师</span>&nbsp; <span
+								class="jobtype">企业直招</span>
+						</div>
+						<div style="margin-top: 10px">
+							<span class="ecomb">猎聘网</span>
+						</div>
+					</td>
+					<td>上海</td>
+					<td>2015-06-07</td>
+					<td>年薪<span class="money">5-7万</span></td>
+					<td>已应聘</td>
+
+				</tr>
+
+
+			</table>
+
+		</div>
+		<div id="pagelist">
+			<ul>
+				<li><a href="#">上一页</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li class="current">3</li>
+				<li><a href="#">4</a></li>
+				<li>...</li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">下一页</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="ui-dialog" id="apply" >
+
+		<div class="window"
+			style="min-height: 300px; width: 500px; margin-top: 260px;">
+			<div class="head">
+				<h1>投递确认</h1>
+				<a href="javascript:doCancel();" class="ui-icon icon-cancel close">X</a>
+			</div>
+			
+
+			<form action="" method="post">
+			<br/>
+			<div style="text-align: left; margin-left: 40px">
+			<div>
+			<input type="radio" name="res"/>中文简历_asd&nbsp;&nbsp;中文&nbsp;&nbsp;完整度：90%&nbsp;&nbsp;
+			</div>
+			<div>
+			<input type="radio" name="res"/>中文简历_123&nbsp;&nbsp;中文&nbsp;&nbsp;完整度：90%&nbsp;&nbsp;
+			</div>
+			<div>
+			<input type="radio" name="res"/>中文简历_123&nbsp;&nbsp;中文&nbsp;&nbsp;完整度：90%&nbsp;&nbsp;
+			</div>
+			<div>
+			<input type="radio" name="res"/>中文简历_123&nbsp;&nbsp;中文&nbsp;&nbsp;完整度：90%&nbsp;&nbsp;
+			</div>
+			<div>
+			<input type="radio" name="res"/>中文简历_123&nbsp;&nbsp;中文&nbsp;&nbsp;完整度：90%&nbsp;&nbsp;
+			</div>
+			</div>
+			 <input type="hidden" name="id" value="" />
+			<textarea name="remark" class="ui-input" placeholder="自我介绍" style="margin: 12px auto; width: 400px;height: 130px"></textarea>
+				<div class="buttons">
+					<input type="submit" value="确定" class="ui-btn" /> <a
+						href="javascript:doCancel();" class="ui-btn white">取消</a>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	function doCancel() {
+		$(".ui-dialog").hide();
+	}
+
+	function doApply(id) {
+
+		var dialog = $("#apply");
+		var form = $("form", dialog);
+
+		$("input[name=id]", form).val(id);
+
+		dialog.show();
+
+	}
+
+</script>
+</html>
