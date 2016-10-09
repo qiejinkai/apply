@@ -41,29 +41,23 @@
 	font-weight: 300;
 }
 
-.record table {
+.record {
+	border: 1px solid;
+	height: 130px;
+	background-color: #f8f8f8;
+	margin-bottom: 5px;
+}
+
+.record .bar {
 	width: 100%;
-}
-
-.record table tr td {
-	margin-top: 5px;
-	padding-bottom: 5px;
-	border-bottom: solid #a9b7b7 1px;
-}
-
-.record table tr {
+	height:20px;
+	background-color: #efefef;
 	
 }
-
-.record .status {
-	background: url("../img/putdown.png") no-repeat 2px center;
-	width: 100px;
-	height: 25px;
-	border: 0px;
-	text-align: right;
-	border: 0px;
+.record .middle{
+	width: 100%;
+	position: inherit;
 }
-
 .record .log {
 	margin-bottom: 10px;
 	font-size: 12px;
